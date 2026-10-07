@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kapasitetsvakt - Hovedoppsett",
+        "description": "Konfigurer sensorer og grenser for kapasitetsvakten.",
+        "data": {
+          "effect_sensor": "Effektsensor (kW / W)",
+          "hour_sensor": "Timesensor (kWh)",
+          "net_effect_sensor": "Nettoeffektsensor (Valgfri)",
+          "load_count": "Antall laster du vil styre (1–6)",
+          "max_kw": "Maks kapasitetsledd / grense (kW)",
+          "off_margin": "Utkoblingsmargin (kW)",
+          "reconnect_margin": "Gjeninnkoblingsmargin (kW)"
+        },
+        "data_description": {
+          "effect_sensor": "Sensoren som viser sanntidseffekt fra strømmåleren din (HAN-sensor).",
+          "hour_sensor": "Sensoren som måler forbruket hittil i inneværende time.",
+          "net_effect_sensor": "Brukt ved solceller/nettoeksport.",
+          "load_count": "Velg hvor mange forbrukere du vil koble til vakten.",
+          "max_kw": "Maksimal ønsket timeeffekt (f.eks. 5 kW).",
+          "off_margin": "Margin før grensen nås der utkopling starter (f.eks. 0,3 kW).",
+          "reconnect_margin": "Ekstra margin under utkoblingsgrensen før innkobling."
+        }
+      },
+      "loads": {
+        "title": "Kapasitetsvakt - Velg laster",
+        "description": "Velg hvilke enheter i Home Assistant som skal styrer. Last 1 kobles ut først.",
+        "data": {
+          "load_1_entity": "Last 1 (Prioritet 1 - kobles ut først)",
+          "load_2_entity": "Last 2",
+          "load_3_entity": "Last 3",
+          "load_4_entity": "Last 4",
+          "load_5_entity": "Last 5",
+          "load_6_entity": "Last 6 (Prioritet 6 - kobles ut sist)"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Endre grenser og marginer",
+        "description": "Juster grensene for kapasitetsvakten.",
+        "data": {
+          "max_kw": "Maks kapasitetsledd (kW)",
+          "off_margin": "Utkoblingsmargin (kW)",
+          "reconnect_margin": "Gjeninnkoblingsmargin (kW)"
+        }
+      }
+    }
+  }
+}

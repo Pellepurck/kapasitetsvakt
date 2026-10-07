@@ -1,0 +1,9 @@
+{
+  "domain": "kapasitetsvakt",
+  "name": "Kapasitetsvakt",
+  "codeowners": ["@dittnavn"],
+  "config_flow": true,
+  "documentation": "https://github.com",
+  "iot_class": "local_polling",
+  "version": "1.0.0"
+}
